@@ -10,12 +10,12 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class GetRequest02 extends TestBaseJsonPlaceHolder {
+public class GetRequest06 extends TestBaseJsonPlaceHolder {
     /*
     https://jsonplaceholder.typicode.com/todos/123 url'ine
-   accept type'i "application/json" olan GET request'i yolladigimda
-   gelen response’un
-  status kodunun 200
+    accept type'i "application/json" olan GET request'i yolladigimda
+    gelen response’un
+    status kodunun 200
     ve content type'inin "application/json"
   ve Headers'daki "Server" in "cloudflare"
   ve response body'deki "userId"'nin 7
@@ -24,7 +24,7 @@ public class GetRequest02 extends TestBaseJsonPlaceHolder {
      */
     @Test
     public void test() {
-        // her bir "/ "bir param demek oluyor 2 tane oldugu icin pathParams() yazilir..
+        // her bir "/"bir param demek oluyor 2 tane oldugu icin pathParams() yazilir..
         // bu method da parametreler key ve value seklindedir...
         // key e herhangi birsey yazilabilir value onemli..
 
@@ -52,7 +52,7 @@ public class GetRequest02 extends TestBaseJsonPlaceHolder {
 
        // System.out.println(response.getHeader("Server")); //Server=>cloudflare
        // Assert.assertEquals("cloudflare",response.getHeader("Server")); bu iki satir yerine yukaridaki gibi
-        // response kismina ekleyebiliriz ve yeri farketmex..
+        // response kismina ekleyebiliriz ve yeri farketmez..
 
     }
 }

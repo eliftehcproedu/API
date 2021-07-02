@@ -8,7 +8,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class GetRequest01 {
+public class GetRequest05 {
     /*
     http://dummy.restapiexample.com/api/v1/employees url'ine
     accept type'i "application/json" olan GET request'i yolladigimda

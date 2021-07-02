@@ -12,7 +12,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class GetRequest03 extends TestBaseHerokuapp {
+public class GetRequest07 extends TestBaseHerokuapp {
     /*
     https://restful-booker.herokuapp.com/booking/5 url'ine bir request yolladigimda
      	HTTP Status Code'unun 200
@@ -51,7 +51,8 @@ public class GetRequest03 extends TestBaseHerokuapp {
     */
 
         response.then().assertThat().statusCode(200).contentType(ContentType.JSON);
-
+        //gelen response u json objesine atip ordan istedigimiz degerleri alabiliyoruz..
+        //JSON turunde olan verilerin icinde navigate yapabilmemiz icin JsonPath objesi olusturmamiz gerekiyor
          JsonPath json=response.jsonPath();
 
        // Body icindeki ifadeleri body("", Matcher.equalTo("")) ile assert etmek yerine JsonPath ile direk Assert.assert() edebiliyoruz.
