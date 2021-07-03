@@ -62,11 +62,5 @@ Toplam 24 tane çalışan olduğunu,
         Assert.assertTrue(json.getList("data.employee_age").containsAll(yasList)); //passed
 
 
-
-
-
-
-
-
     }
 }
