@@ -51,7 +51,7 @@ public class GetRequest12 extends TestBaseHerokuapp {
 
         response.prettyPrint();
         
-        //Deserialization (java format->json format)
+        //Deserialization (json format-> java format)
 
         Map<String,Object> actualDataMap = response.as(HashMap.class);
         System.out.println("actualDataMap : " + actualDataMap);

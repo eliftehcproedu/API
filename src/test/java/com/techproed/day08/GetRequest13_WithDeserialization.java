@@ -11,7 +11,7 @@ import java.util.*;
 
 import static io.restassured.RestAssured.given;
 
-public class GetRequest13 extends TestBaseDummy {
+public class GetRequest13_WithDeserialization extends TestBaseDummy {
     /*
     http://dummy.restapiexample.com/api/v1/employees url ine bir istek gönderildiğinde
     Status kodun 200 olduğunu,
