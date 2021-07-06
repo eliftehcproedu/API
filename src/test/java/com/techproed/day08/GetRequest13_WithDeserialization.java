@@ -31,7 +31,7 @@ public class GetRequest13_WithDeserialization extends TestBaseDummy {
 
     @Test
     public void test(){
-        spec03.pathParams("parametre1","employees");
+        spec03.pathParam("parametre1","employees");
         TestDataDummy testData = new TestDataDummy();
         HashMap<String, Object> expectedDataMap = testData.setUpTestData();
         System.out.println("expectedDataMap :" +expectedDataMap);

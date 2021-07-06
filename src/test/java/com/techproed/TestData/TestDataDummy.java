@@ -48,4 +48,18 @@ public class TestDataDummy {
         return expectedDataMap;
 
     }
+    public HashMap<String,Integer> setupTestData2(){
+
+        HashMap<String,Integer> expectedDataMap = new HashMap<>();
+
+        expectedDataMap.put("statusCode",200);
+        expectedDataMap.put("enYuksekMaas",725000);
+        expectedDataMap.put("iknciEnYuksekMaas",675000);
+        expectedDataMap.put("enKucukYas",19);
+
+
+        return expectedDataMap;
+    }
+
+
 }
