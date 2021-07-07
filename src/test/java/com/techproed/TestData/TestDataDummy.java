@@ -23,6 +23,7 @@ public class TestDataDummy {
      */
 
     public HashMap<String,Object> setUpTestData(){
+
         HashMap<String,Object> expectedDataMap =new HashMap<String,Object>();
 
         //yaslari liste yaptik cunku sadece yas bilgisi var key value ya uygun veri olmadigi icin liste yaptik...
@@ -57,9 +58,30 @@ public class TestDataDummy {
         expectedDataMap.put("iknciEnYuksekMaas",675000);
         expectedDataMap.put("enKucukYas",19);
 
-
         return expectedDataMap;
     }
 
+    public HashMap<String,Object>  setUpTestData3(){
+
+        HashMap<String,Object> requestBodyMap=new HashMap<String,Object>();
+
+        requestBodyMap.put("name", "Ahmet Aksoy");
+        requestBodyMap.put("salary", 1000);
+        requestBodyMap.put("age", 18);
+        requestBodyMap.put("profile_image", "");
+
+        return requestBodyMap;
+    }
+
+    public HashMap<String,Object> setUpTestData4(){
+
+        HashMap<String,Object> expectedDataMap = new HashMap<>();
+
+        expectedDataMap.put("statusCode",200);
+        expectedDataMap.put("status","success");
+        expectedDataMap.put("message","Successfully! Record has been added.");
+
+        return expectedDataMap;
+    }
 
 }

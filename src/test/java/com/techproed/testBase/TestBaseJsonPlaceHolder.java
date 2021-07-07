@@ -9,6 +9,7 @@ public class TestBaseJsonPlaceHolder {
 
     @Before
     public void setup(){
+        //spec() : base url nin eklentilerini- parametrelerini almak icin kullaniyoruz..
         spec01=new RequestSpecBuilder().
                 setBaseUri("https://jsonplaceholder.typicode.com").
                 build();
