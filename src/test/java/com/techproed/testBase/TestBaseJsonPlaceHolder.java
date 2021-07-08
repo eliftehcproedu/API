@@ -13,8 +13,6 @@ public class TestBaseJsonPlaceHolder {
         spec01=new RequestSpecBuilder().
                 setBaseUri("https://jsonplaceholder.typicode.com").
                 build();
-
-
     }
 
 }

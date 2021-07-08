@@ -90,6 +90,7 @@ olduğunu test edin
         //bookingdates->JSONObject donduruyor..
         Assert.assertEquals(requestBodyJSONObject.getJSONObject("bookingdates").getString("checkout"),
                 ((Map)((Map<?, ?>) actualDataMap.get("booking")).get("bookingdates")).get("checkout"));
+
     }
 
 
