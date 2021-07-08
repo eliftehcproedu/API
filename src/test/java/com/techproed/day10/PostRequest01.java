@@ -13,7 +13,7 @@ public class PostRequest01 extends TestBaseDummy {
 
     //Get ile Post farki ;
     //GET: bilgiyi alir, var olan kayidi getirir, kayitta degisiklik olmaz, authorization yoktur
-    //POST: yeni bilgi olusturur, yeni kayit yapar, authorization vardir..
+    //POST: yeni bilgi olusturur, yeni kayit yapar, authorization vardir..request bady olusturuyoruz..
     //postta yeni bir kayit olusturdugumuz icin authorization yaptik extra..diger butun asamlar get ile ayni aslinda
     /*
     http://dummy.restapiexample.com/api/v1/create url ine, Request Body olarak
@@ -52,7 +52,7 @@ olduğunu test edin
         //expectedDataMap = {message=Successfully! Record has been added., statusCode=200, status=success}
 
 
-        //request olusturma
+        // request olusturma
         // authorization -> belli bir database ya da server a ulasabilme yetkisi
         // yada prada yapilabilen islemleri belirler.
         // Kisiyi yetkilendiren ve sinirlandiran yapidir..bilgi degisikligi icin yetkidir..

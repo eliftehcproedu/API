@@ -72,6 +72,5 @@ https://jsonplaceholder.typicode.com/todos/2 url ‘ine istek gönderildiğinde,
 
 
 
-
     }
 }

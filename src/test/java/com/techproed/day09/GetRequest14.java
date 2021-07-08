@@ -94,7 +94,6 @@ olduğunu test edin.
         Assert.assertEquals(expectedDataMap.get("iknciEnYuksekMaas"),jsonMaasListesi.get(jsonMaasListesi.size()-2));//22.index 23.elemanin maasi
 
 
-
     }
 
 }

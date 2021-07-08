@@ -1,8 +1,14 @@
 package com.techproed.TestData;
 
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import static io.restassured.RestAssured.given;
 
 public class TestDataDummy {
      /*
@@ -84,4 +90,17 @@ public class TestDataDummy {
         return expectedDataMap;
     }
 
+    public JSONObject setUpDelete01(){
+
+        JSONObject expectedData=new JSONObject();
+        expectedData.put("status","success");
+        expectedData.put("data", "2");
+        expectedData.put("message","Successfully! Record has been deleted");
+        expectedData.put("statusCode",200);
+
+        return expectedData;
+
+
+
+    }
 }

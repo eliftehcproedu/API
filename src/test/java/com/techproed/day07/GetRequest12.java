@@ -73,7 +73,6 @@ public class GetRequest12 extends TestBaseHerokuapp {
                              ((Map)actualDataMap.get("bookingdates")).get("checkin"));
 
 
-
     }
 
 
