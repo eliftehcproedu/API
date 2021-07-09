@@ -13,7 +13,9 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.given;
 
 public class PatchRequest01 extends TestBaseJsonPlaceHolder {
-    //Patch :var olan kaydin bir kismini gunceller
+    // Patch :var olan kaydin bir kismini gunceller
+    // Put: var olan kaydin tamamini guncellemek icin kullanilir, authorization kullanilir
+    // POST ; Sifirdan yani yeni bir kayit olusturur
     /*
     https://jsonplaceholder.typicode.com/todos/198 URL ine aşağıdaki body gönderdiğimde
    {

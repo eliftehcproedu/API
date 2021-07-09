@@ -16,6 +16,9 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class PostRequest03 extends TestBaseJsonPlaceHolder {  //url e ulasmak icin TestBase
+    // POST ; Sifirdan yani yeni bir kayit olusturur
+    // Put: var olan kaydin tamamini guncellemek icin kullanilir, authorization kullanilir
+    // Patch :var olan kaydin bir kismini gunceller
     /*
     https://jsonplaceholder.typicode.com/todos URL ine aşağıdaki body gönderildiğinde,
      }

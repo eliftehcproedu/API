@@ -12,7 +12,9 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 
 public class PutRequest01 extends TestBaseJsonPlaceHolder {
-//Put: var olan kaydin tamamini guncellemek icin kullanilir, authorization kullanilir
+    // Put: var olan kaydin tamamini guncellemek icin kullanilir, authorization kullanilir
+    // Patch :var olan kaydin bir kismini gunceller
+    // POST ; Sifirdan yani yeni bir kayit olusturur
     /*
     https://jsonplaceholder.typicode.com/todos/198 URL ine aşağıdaki body gönerdiğimde
    {
