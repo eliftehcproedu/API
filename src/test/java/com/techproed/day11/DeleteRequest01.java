@@ -31,6 +31,7 @@ Dönen response un status kodunun 200 ve body kısmının aşağıdaki gibi oldu
         TestDataDummy testData=new TestDataDummy();
         JSONObject expectedData= testData.setUpDelete01();
         System.out.println("expectedData = " + expectedData);
+        //expectedData = {"data":"2","message":"Successfully! Record has been deleted","status":"success","statusCode":200}
 
         //request gonder
         Response response=given().
